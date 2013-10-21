@@ -1,28 +1,26 @@
-== README
+##1. Add devise to gemfile
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```ruby 
+# Use devise as authentication tool
+gem 'devise'
+```
+##2. Bundle with devise included in gems, then setup basic devise:
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+###install devise
+
+```
+rails g devise:install
+```
+
+###create devise models (user)
+
+```
+rails g devise user
+```
+
+###create devise views (for user)
+
+```
+rails g devise:views user
+```
